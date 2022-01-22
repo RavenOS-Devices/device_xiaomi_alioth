@@ -14,6 +14,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 TARGET_USES_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
 #USE_PIXEL_CHARGING := true
 TARGET_BOOT_ANIMATION_RES := 1080
 #USE_AOSP_CLOCK := true
@@ -23,9 +24,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO F3
 
-ARCANA_DEVICE := alioth
-ARCANA_MAINTAINER := Eidoron1
+#Some official RAVEN stuffs
+RAVEN_BUILD_TYPE := OFFICIAL
 WITH_GAPPS := true
+
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
