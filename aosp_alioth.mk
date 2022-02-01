@@ -26,6 +26,9 @@ PRODUCT_MODEL := POCO F3
 
 #Some official RAVEN stuffs
 RAVEN_BUILD_TYPE := OFFICIAL
+RAVEN_MAINTAINER := イタチ
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+       org.raven.device=Alioth
 WITH_GAPPS := true
 
 
